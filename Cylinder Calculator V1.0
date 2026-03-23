@@ -1,0 +1,21 @@
+echo "# My-first-C-program-Cylinder-Calculator-1.0" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Jegzy14/My-first-C-program-Cylinder-Calculator-1.0.git
+git push -u origin main
+
+Console.WriteLine("Welcome to Cylinder Calculation 1.0!");
+Console.WriteLine("Enter the value of height: ");
+string heightAsString = Console.ReadLine();
+double height = Convert.ToDouble(heightAsString);
+Console.WriteLine("Enter the value of radius");
+string radiusAsString = Console.ReadLine();
+double radius = Convert.ToDouble(radiusAsString);
+double Pi = 3.1415926;
+double Volume = Pi * radius * radius * height;
+double SurfaceArea = 2 * Pi * radius * (radius * height);
+Console.WriteLine("The Volume of the cylinder is " + Volume + "Cubic Units.");
+Console.WriteLine("The Surface Area of the cylinder is " + SurfaceArea + "Square Units.");
+Console.ReadKey();
