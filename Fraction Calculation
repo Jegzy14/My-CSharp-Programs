@@ -1,0 +1,6 @@
+int a = 7;
+int b = 2;
+float c = 4.5f;
+float d = 3.5f;
+float result = a/b + c/d;
+Console.WriteLine(result);
