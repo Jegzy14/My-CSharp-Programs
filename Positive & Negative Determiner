@@ -1,0 +1,24 @@
+Console.WriteLine("Welcome to Positive or Negative determiner!");
+
+Console.WriteLine("Enter the first number: ");
+string number1AsText = Console.ReadLine();
+int number1 = Convert.ToInt32(number1AsText);
+
+Console.WriteLine("Enter the second number: ");
+string number2AsText = Console.ReadLine();
+int number2 = Convert.ToInt32(number2AsText);
+
+if(number1 * number2 < 0)
+{
+    Console.WriteLine("The number is Negative");
+}
+else if(number1 * number2 > 0)
+{
+    Console.WriteLine("The number is Positive");
+}
+else if(number1 * number2 == 0)
+{
+    Console.WriteLine("The number is Zero");
+}
+
+Console.ReadKey();
