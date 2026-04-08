@@ -1,0 +1,49 @@
+Console.WriteLine("Welcome to Tortuga Shop of Items");
+Console.WriteLine(
+    "The following items are available:" +
+    "\r\n1 – Rope" +
+    "\r\n2 – Torches" +
+    "\r\n3 – Climbing Equipment" +
+    "\r\n4 – Clean Water" +
+    "\r\n5 – Machete" +
+    "\r\n6 – Canoe" +
+    "\r\n7 – Food Supplies" +
+    "\r\nWhat number do you want to see the price of? \r\n"
+    );
+
+Console.WriteLine("Enter Menu Choice Number: ");
+int choice = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("What is your name: ");
+string name = Console.ReadLine();
+Console.WriteLine("Welcome " + name + " your menu choice cost is shown below.");
+string MyName = "John";
+
+string response1;
+response1 = choice switch
+{
+    1 => "10 Gold.",
+    2 => "15 Gold.",
+    3 => "25 Gold.",
+    4 => "1 Gold.",
+    5 => "20 Gold.",
+    6 => "200 Gold.",
+    7 => "1 Gold.",
+    _ => "Apologies this is not an option on the menu."
+};
+string response2;
+response2 = choice switch
+{
+    1 => "5 Gold.",
+    2 => "8 Gold.",
+    3 => "13 Gold.",
+    4 => "50 Silver.",
+    5 => "10 Gold.",
+    6 => "100 Gold.",
+    7 => "50 Silver.",
+    _ => "Apologies this is not an option on the menu."
+};
+if (name == MyName)
+    Console.WriteLine(response2);
+else
+    Console.WriteLine(response1);
