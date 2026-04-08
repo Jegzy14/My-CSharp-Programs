@@ -1,0 +1,21 @@
+Console.WriteLine("Welcome to Switch Type 1 logic of Choice");
+Console.Write("Enter value: ");
+int choice = Convert.ToInt32(Console.ReadLine());
+switch (choice)
+{
+    case 1:
+        Console.WriteLine("Ye rest and recover your health.");
+        break;
+    case 2:
+        Console.WriteLine("Raiding the port town get ye 50 gold doubloons.");
+        break;
+    case 3:
+        Console.WriteLine("The wind is at your back; the open horizon ahead.");
+        break;
+    case 4:
+        Console.WriteLine("'Tis but a baby Kraken, but still eats toy boats.");
+        break;
+    default:
+        Console.WriteLine("Apologies. I do not know that one.");
+        break;
+}
