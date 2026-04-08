@@ -1,0 +1,6 @@
+void CountBetween(int min, int max)
+{
+    for (int i = min; i <= max; i++)
+        Console.WriteLine(i);
+}
+CountBetween(20, 30);
