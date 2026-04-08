@@ -1,0 +1,6 @@
+int[] scores = new int[10];
+for (int index = 0; index < scores.Length; index++)
+{
+    int score = scores[index];
+    Console.WriteLine(score);
+}
