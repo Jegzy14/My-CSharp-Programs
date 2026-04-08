@@ -1,0 +1,8 @@
+Console.WriteLine("Count 1 to 10 then 1 to 20.");
+Count(10);
+Count(20);
+void Count(int numberToCountTo)
+{
+    for (int current = 1; current <= numberToCountTo; current++)
+        Console.WriteLine(current);
+}
