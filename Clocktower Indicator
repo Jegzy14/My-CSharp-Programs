@@ -1,0 +1,10 @@
+Console.WriteLine("Welcome to Even and Odd Clocktower Indicator!");
+Console.WriteLine("Enter number: ");
+string numberAsText = Console.ReadLine();
+int number = Convert.ToInt32(numberAsText);
+if (number % 2 == 0)
+    Console.WriteLine("Tick");
+else if (number % 2 == 1)
+    Console.WriteLine("Tock");
+else
+    Console.WriteLine("Invalid input. Please enter a valid integer");
