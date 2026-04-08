@@ -1,0 +1,8 @@
+Count(20);
+void Count(int numberToCountTo)
+{
+    if (numberToCountTo < 1)
+        return;
+    for (int index = 1; index <= numberToCountTo; index++)
+        Console.WriteLine(index);
+}
