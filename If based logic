@@ -1,0 +1,13 @@
+Console.WriteLine("Welcome ");
+Console.Write("Enter value: ");
+int choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 1)
+    Console.WriteLine("Ye rest and recover your health.");
+else if (choice == 2)
+    Console.WriteLine("Raiding the port town get ye 50 gold doubloons.");
+else if (choice == 3)
+    Console.WriteLine("The wind is at your back; the open horizon ahead.");
+else if (choice == 4)
+    Console.WriteLine("'Tis but a baby Kraken, but still eats toy boats.");
+else
+    Console.WriteLine("Apologies. I do not know that one.");
