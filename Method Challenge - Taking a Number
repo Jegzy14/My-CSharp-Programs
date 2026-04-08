@@ -1,0 +1,22 @@
+int result1 = AskForNumber("What is the airspeed velocity of an unladen swallow?");
+Console.WriteLine("You entered: " + result1);
+int result2 = AskForNumberInRange("Enter a number between 25 and 50", 25, 50);
+Console.WriteLine("You entered: " + result2);
+int AskForNumber(string text)
+{
+    Console.WriteLine(text);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+int AskForNumberInRange(string text, int min, int max)
+{
+    int number;
+    while (true)
+    {
+        Console.WriteLine(text);
+        number = Convert.ToInt32(Console.ReadLine());
+        if (number >= min && number <= max)
+            return number;
+        Console.WriteLine("Please enter a number between " + min + " and " + max);
+    }
+}
