@@ -1,0 +1,13 @@
+Console.WriteLine("Welcome to Switch Logic Type 2");
+Console.Write("Enter value: ");
+int choice = Convert.ToInt32(Console.ReadLine());
+string response;
+response = choice switch
+{
+    1 => "Ye rest and recover your health.",
+    2 => "Raiding the port town get ye 50 gold doubloons.",
+    3 => "The wind is at your back; the open horizon ahead.",
+    4 => "'Tis but a baby Kraken, but still eats toy boats.",
+    _ => "Apologies. I do not know that one."
+};
+Console.WriteLine(response);
