@@ -1,0 +1,10 @@
+Console.WriteLine("Enter the score: ");
+string scoreAsText = Console.ReadLine();
+int score = Convert.ToInt32(scoreAsText);
+int pointsNeededToPass = 100;
+
+bool levelComplete = score >= pointsNeededToPass;
+if (levelComplete)
+    Console.WriteLine("You've beaten the level!");
+if (!levelComplete)
+ Console.WriteLine("This level is not over yet!");
