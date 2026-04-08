@@ -1,0 +1,9 @@
+for (int x = 1; x <= 5; x++)
+  Console.WriteLine(x);
+
+for (int playersNumber = -1; playersNumber < 0 || playersNumber > 10;)
+{
+    Console.WriteLine("Enter a number between 0 and 10: ");
+    string playerResponse = Console.ReadLine();
+    playersNumber = Convert.ToInt32(playerResponse);
+}
