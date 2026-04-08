@@ -1,0 +1,28 @@
+Console.WriteLine("Welcome to the Magic Cannon Challenge");
+int a = 1;
+while (a <= 100)
+{
+if (a % 3 == 0 && a % 5 == 0)
+    {
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine($"{a}: Fire and Electric");
+    }
+else if (a % 3 == 0)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine($"{a}: Fire");
+    }
+else if (a % 5 == 0)
+    {
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine($"{a}: Electric");
+    }
+else
+    {
+        Console.ResetColor();
+        Console.WriteLine($"{a}: Normal");
+    }
+    Console.ResetColor();
+    a++;
+
+}
