@@ -1,0 +1,10 @@
+(string, int, int) score1 = ("R2-D2", 12420, 15);
+(string, int, int) score2 = ("C-3P0", 8543, 9);
+(string, int, int) score3 = ("GONK",  -1, 1);
+Console.WriteLine($"Name:{score1.Item1} Level:{score1.Item3} Score:{score1.Item2}");
+
+//var also can do this technique
+var score1 = ("R2-D2", 12420, 15);
+var score2 = ("C-3P0", 8543, 9);
+var score3 = ("GONK", -1, 1);
+Console.WriteLine($"Name:{score1.Item1} Level:{score1.Item3} Score:{score1.Item2}");
