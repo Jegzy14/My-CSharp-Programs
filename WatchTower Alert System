@@ -1,0 +1,27 @@
+Console.WriteLine("Welcome to the WatchTower Alert System!");
+Console.WriteLine("Enter the value of x: ");
+string xAsText = Console.ReadLine();
+double x = Convert.ToDouble(xAsText);
+Console.WriteLine("Enter the value of y: ");
+string yAsText = Console.ReadLine();
+double y = Convert.ToDouble(yAsText);
+if (x < 0 && y > 0)
+    Console.WriteLine("The enemy is to the NorthWest!");
+else if (x == 0 && y > 0)
+    Console.WriteLine("The enemy is to the North!");
+else if (x > 0 && y > 0)
+    Console.WriteLine("The enemy is to the NorthEast!");
+else if (x < 0 && y == 0)
+    Console.WriteLine("The enemy is to the West!");
+else if (x == 0 && y == 0)
+    Console.WriteLine("The enemy is already here!");
+else if (x > 0 && y == 0)
+    Console.WriteLine("The enemy is to the East!");
+else if (x < 0 && y < 0)
+    Console.WriteLine("The enemy is to the SouthWest!");
+else if (x == 0 && y < 0)
+    Console.WriteLine("The enemy is to the South!");
+else if (x > 0 && y < 0)
+    Console.WriteLine("The enemy is to the SouthEast!");
+else
+    Console.WriteLine("The enemy is not here!");
